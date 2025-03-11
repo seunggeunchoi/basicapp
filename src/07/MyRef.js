@@ -18,9 +18,9 @@ export default function MyRef() {
     console.log("Ref 변수", rVal.current);
   };
 
-  useEffect(() => {
-    console.log("State 변수:", sVal);
-  }, [sVal]);
+  // useEffect(() => {
+  //   console.log("State 변수:", sVal);
+  // }, [sVal]);
 
   return (
     <div className="w-10/12 felx justify-center items-center">

@@ -4,5 +4,11 @@ module.exports = {
   theme: {
     extend: {}, // 원하는 스타일 확장 가능
   },
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: [
+    "prettier-plugin-tailwindcss",
+    require("@tailwindcss/forms")({
+      strategy: "base",
+      strategy: "class",
+    }),
+  ],
 };
