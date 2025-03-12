@@ -11,6 +11,9 @@ import MyRefAdd from "./07/MyRefAdd";
 import Gallery from "./08/Gallery";
 //import RouterHome from "./09/RouterHome";
 import RecoilMain from "./10/RecoilMain";
+// import Rest from "./11/Rest";
+import Rest from "./12/Rest";
+import TodoList from "./other/TodoList";
 
 import { RiHomeHeartFill } from "react-icons/ri";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -41,6 +44,12 @@ function App() {
             <li className="mx-2 p-2 rounded-md hover:bg-gray-300 hover:text-blue-600">
               <Link to="/recoil">Recoil</Link>
             </li>
+            <li className="mx-2 p-2 rounded-md hover:bg-gray-300 hover:text-blue-600">
+              <Link to="/rest">Json CRUD</Link>
+            </li>
+            <li className="mx-2 p-2 rounded-md hover:bg-gray-300 hover:text-blue-600">
+              <Link to="/todoList">TODO LIST</Link>
+            </li>
           </ul>
           <p>
             <Link to="/">
@@ -56,6 +65,8 @@ function App() {
             <Route path="/traffic" element={<Traffic />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/recoil" element={<RecoilMain />} />
+            <Route path="/rest" element={<Rest />} />
+            <Route path="/todoList" element={<TodoList />} />
           </Routes>
         </main>
         <footer className="flex justify-center items-center h-20 bg-black text-slate-100">
